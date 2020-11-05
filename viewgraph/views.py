@@ -3,10 +3,13 @@ from django.http import HttpResponse
 import json
 import os
 import sys
-sys.path.append("../textgraph")
-from settings import STATIC_ROOT 
+from django.contrib.staticfiles.storage import staticfiles_storage
 
-all_movies_json_path = os.path.join(STATIC_ROOT, '/viewgraph/data-v0.1.json')
+
+
+
+
+all_movies_json_path = staticfiles_storage.url('viewgraph/data-v0.1.json')
 
 #'./static/viewgraph/data-v0.1.json'
 
