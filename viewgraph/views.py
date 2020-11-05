@@ -5,7 +5,6 @@ import os
 import sys
 from django.conf import settings
 all_movies_json_path = os.path.join(settings.STATIC_ROOT, 'viewgraph/data-v0.1.json')
-print(all_movies_json_path)
 
 #'./static/viewgraph/data-v0.1.json'
 
