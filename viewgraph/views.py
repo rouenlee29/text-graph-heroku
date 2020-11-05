@@ -3,13 +3,9 @@ from django.http import HttpResponse
 import json
 import os
 import sys
-from django.contrib.staticfiles.storage import staticfiles_storage
-
-
-
-
-
-all_movies_json_path = '/staticfiles/viewgraph/data-v0.1.json'
+from django.conf import settings
+all_movies_json_path = os.path.join(settings.STATIC_ROOT, 'viewgraph/data-v0.1.json')
+print(all_movies_json_path)
 
 #'./static/viewgraph/data-v0.1.json'
 
