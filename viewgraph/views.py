@@ -9,7 +9,7 @@ from django.contrib.staticfiles.storage import staticfiles_storage
 
 
 
-all_movies_json_path = staticfiles_storage.url('viewgraph/data-v0.1.json')
+all_movies_json_path = '/staticfiles/viewgraph/data-v0.1.json'
 
 #'./static/viewgraph/data-v0.1.json'
 
