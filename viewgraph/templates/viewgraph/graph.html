@@ -1065,7 +1065,7 @@ if ("{{ landing_page_mode|escapejs }}" == "True"){
   // Instructions for user
   
   const defaultInstructions = "Hover over circle"
-  const textAlignment_y = 90;
+  const textAlignment_y = 110;
   var svgText = svg.append("text");
   svgText
     .attr("x",textAlignment_x)
@@ -1142,7 +1142,7 @@ if ("{{ landing_page_mode|escapejs }}" == "True"){
       .on("end", dragended)
       );
   
-  const legendStart_y = 400;
+  const legendStart_y = 500;
   const legendStart_x = textAlignment_x + 10;
 
   // add dots in legend
